@@ -1,11 +1,11 @@
 
-  h2 {
+  h1 {
     font-family: "helvectia";
     color: green;
     background-color: white;
   }
 
-  h1, h3, h4, h5 {
+  h2, h3, h4, h5 {
     font-family: "helvectia";
     color: white;
     background-color: black;
