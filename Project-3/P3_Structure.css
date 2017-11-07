@@ -1,1 +1,50 @@
 <!DOCTYPE css>
+
+head{
+  background-color: rgb(0,0,0);
+}
+
+body{
+  background-color:rgb(0,0,0);
+}
+
+h1{
+  align:center;
+  background-color: rgb(0,0,0);
+  text-align: center;
+}
+h2{
+  background-color: #374347;
+  text-align: center;
+}
+
+p{
+  text-align: center;
+}
+
+p1 {
+  text-align: left;
+}
+
+p2 {
+  text-align: center;
+}
+
+p3{
+  text-align: right;
+}
+
+a:link {
+  color: red;
+  text-decoration: none;
+}
+a:visited{
+  color: white;
+}
+a:hover{
+  color: red;
+  text-decoration: underline;
+}
+a:active{
+  color: white;
+}

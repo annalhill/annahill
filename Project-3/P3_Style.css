@@ -1,14 +1,44 @@
 
-  h1 {
-    font-family: "helvectia";
-    color: green;
-    background-color: white;
+@font-face{
+  font-family:"rust";
+  src: url('fonts/rust.woff') format('woff');
+}
+
+h1 {
+  text-transform: uppercase;
+  font-family: "rust";
+  color: rgb(255,255,255);
+  font-size:350%;
+}
+
+.credits{
+  font-weight: lighter;
+}
+
+@font-face{
+  font-family:"typewriter_underwood";
+  src: url('fonts/MyUnderwood.ttf') format('truetype');
+}
+
+h2 {
+  font-family: "typewriter_underwood";
+  color: white;
+  font-size:100%;
+
   }
 
-  h2, h3, h4, h5 {
-    font-family: "helvectia";
-    color: white;
-    background-color: black;
-  }
+  .credits{
+    font-style: italic;
+}
 
-rgba (266, 99, 000,.5)
+p {
+  font-family:'american-typewriter';
+  color: white;
+  font-size:100%
+}
+
+p1, p2, p3 {
+  font-family:'american-typewriter';
+  color: white;
+  font-size:100%
+}
