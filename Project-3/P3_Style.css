@@ -20,7 +20,7 @@ h1 {
   src: url('fonts/MyUnderwood.ttf') format('truetype');
 }
 
-h2 {
+h2, h3, h4, h5, h6, h7 {
   font-family: "typewriter_underwood";
   color: white;
   font-size:100%;
@@ -32,13 +32,31 @@ h2 {
 }
 
 p {
-  font-family:'american-typewriter';
+  font-family:'typewriter_underwood';
   color: white;
   font-size:100%
 }
 
-p1, p2, p3 {
-  font-family:'american-typewriter';
+p1, p2, p3, p4, p5 {
+  font-family:'typewriter_underwood';
   color: white;
   font-size:100%
+}
+
+p6 {
+  font-family:'typewriter_underwood';
+  color:white;
+  font-size:12px;
+}
+
+nav {
+  font-family:'typewriter_underwood';
+  color: white;
+  font-size:100%
+}
+
+form{
+  font-family: "typewriter_underwood";
+  color: white;
+  font-size:100%;
 }
