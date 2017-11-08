@@ -8,4 +8,6 @@
 
 ### 3. I've also added in the links and I am pretty happy wit the way the link clicks, hovers, etc turned out with the red accents to create a 'heart- style' (or lack there-of since his poetry is about broken hearts...) in my pages.
 
-### 4. At the moment I am trying to add pictures to my pages so lets see how this goes...
+### 4. At the moment I am trying to add pictures to my pages so lets see how this goes... So far it's working to link my images into my main page but I can't seem to get the changes, images as well as font choices to show up in my live page. This is the moment in time after hours tat I am going to go seek help.
+
+### 5. Seeking help. 

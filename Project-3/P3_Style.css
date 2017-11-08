@@ -1,7 +1,7 @@
 
 @font-face{
   font-family:"rust";
-  src: url('fonts/rust.woff') format('woff');
+  src: url('Fonts/rust.woff') format('woff');
 }
 
 h1 {
@@ -17,7 +17,7 @@ h1 {
 
 @font-face{
   font-family:"typewriter_underwood";
-  src: url('fonts/MyUnderwood.ttf') format('truetype');
+  src: url('Fonts/MyUnderwood.ttf') format('truetype');
 }
 
 h2, h3, h4, h5, h6, h7 {
