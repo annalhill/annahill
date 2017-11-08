@@ -18,8 +18,17 @@ body{
   width:300px;
 }
 
-h1{
+.header {
   position: fixed;
+  background-color: #000;
+}
+
+.main {
+  padding-top: 10em;
+}
+
+h1{
+  /*position: fixed;*/
   top:0px;
   left:0px;
   padding:10px;
@@ -30,7 +39,7 @@ h1{
 }
 
 h2{
-  position: fixed;
+  /*position: fixed;*/
   top:0px;
   left:0px;
   padding:10px;
