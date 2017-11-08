@@ -35,7 +35,7 @@ h1{
   margin:0px;
   with:100%
   background-color: grey;
-  text-align: center;
+  text-align: left;
 }
 
 h2{
@@ -46,7 +46,7 @@ h2{
   margin:0px;
   with:100%
   background-color: #374347;
-  text-align: center;
+  text-align: left;
 }
 
 img.align-left{
