@@ -1,153 +1,72 @@
 <!DOCTYPE css>
 
-head{
-  background-color: rgb(0,0,0);
-}
+.active{
 
-body{
-  background-color:rgb(0,0,0);
-}
+  background-color: 120,255;
+ 							 text-align: center;}
+ 							 li {
+ 							   text-align: center;
+ 							   display: inline-block;
+ 							 }
 
-#gradient{
-  background-color: rgb(0,0,0);
-  background-image: -moz-linear-gradient(#000000, #7F0000);
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#000000), to(#7F0000));
-  background-image: -webkit-linear-gradient(#000000, #7F0000);
-  background-image: -o-linear-gradient(#000000, #7F0000);
-  height:150px;
-  width:300px;
-}
+ 							 li a {
+ 							     display: inherit;
+ 							     color: 0;
+ 							     text-align: center;
+ 							     padding: 14px 16px;
+ 							     text-decoration: none;
+ 							 }
 
-.header {
-  position: fixed;
-  background-color: #000;
-}
-
-.main {
-  padding-top: 10em;
-}
-
-h1{
-  /*position: fixed;*/
-  top:0px;
-  left:0px;
-  padding:10px;
-  margin:0px;
-  with:100%
-  background-color: grey;
-  text-align: left;
-}
-
-h2{
-  /*position: fixed;*/
-  top:0px;
-  left:0px;
-  padding:10px;
-  margin:0px;
-  with:100%
-  background-color: #374347;
-  text-align: left;
-}
-
-img.align-left{
-  float: left;
-  margin-left:300px;
-}
-img.align-right{
-  float: right;
-  margin-right:300px;
-
-}
-
-p{
-  margin-top:200px;
-  text-align: center;
-}
-
-p1 {
-  margin-top:200px;
-  text-align: left;
-}
-
-p2 {
-  margin-top:200px;
-  text-align: center;
-}
-
-p3{
-  margin-top:200px;
-  text-align: right;
-}
-
-p5{
-  margin-top:400px;
-  background-color: white;
-  text-align: center;
-}
-
-footer{
-  text-align:center;
-}
-
-form{
-  margin-top:200px;
-}
-
-legend{
-  margin-top:200px;
-  text-align:center;
-}
-
-
-a:link {
-  color: red;
-  text-decoration: none;
-}
-a:visited{
-  color: white;
-}
-a:hover{
-  color: red;
-  text-decoration: underline;
-}
-a:active{
-  color: white;
-}
+               li a:link {
+                 color: red;
+                 text-decoration: none;
+               }
+               li a:visited{
+                 color: white;
+               }
+               li a:hover{
+                 color: black;
+                 text-decoration: underline;
+                 text-align: center;
+               }
+               li a:active{
+                 color: white;
+               }
 
 #container {
 	            display: flex;
 	            flex-wrap: wrap;
-	            font-family: 'barlow', sans-serif;}
+	            font-family: 'typewriter';}
 
-	.square-1 {
-	             background-color: #edefee;
+	.header {
+	             background-color: #82E0AA;
 	             width: 100%;
 	             text-align: center;
 	             padding: 5px;
-							 color: #ff8800;}
+							 color: 255;}
 
-	.square-2 {
-	             background-color: #a4a8a7;
+	.main {
+	             background-color: #186A3B;
 	             width: 100%;
 	             text-align: center;
 	             padding: 5px;
-							 color: #00ff61;}
+							 color: 255;}
 
-	.square-3 {
-						 background-color:#707272;
+	.footer {
+						 background-color:#186A3B;
 						 width: 100%;
 						 text-align: center;
 						 padding: 5px;
-					 	 color:#00bbff}
+					 	 color:255}
 
-	.square-4 {
-	                background-color: #404241;
+	.other {
+	                background-color: #186A3B;
 	                width: 100%;
 	                max-height: 350px;
 	                text-align: center;
 	                padding: 5px;
 	                overflow: scroll;
-									color:#ff0000;}
+									color:0;}
 
 	@media screen and (min-width: 1015px) {
 	                                       .square-1 {
