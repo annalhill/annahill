@@ -1,0 +1,66 @@
+
+@font-face{
+  font-family:"typewriter";
+}
+
+h1, h2 {
+  text-transform: uppercase;
+  font-family: "rust";
+  color: rgb(255,255,255);
+  font-size:200%;
+}
+
+.credits{
+  font-weight: lighter;
+}
+
+@font-face{
+  font-family:"typewriter";
+}
+
+h3, h4, h5, h6, h7 {
+  font-family: "typewriter";
+  color: black;
+  font-size:100%;
+
+  }
+
+  .credits{
+    font-style: italic;
+}
+
+p {
+  font-family:'typewriter';
+  color: black;
+  font-size:100%
+}
+
+p1{
+  font-family:'typewriter';
+  color: pink;
+  font-size:100%
+}
+
+p2 {
+  font-family:'typewriter';
+  color:blue;
+  font-size:100%;
+}
+
+p2 {
+  font-family:'typewriter';
+  color:green;
+  font-size:100%;
+}
+
+nav {
+  font-family:'typewriter';
+  color: black;
+  font-size:100%
+}
+
+form{
+  font-family: "typewriter";
+  color: black;
+  font-size:100%;
+}

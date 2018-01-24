@@ -1,0 +1,101 @@
+<!DOCTYPE css>
+
+head{
+  background-color: white;
+}
+
+body{
+  background-color:white;
+}
+
+#gradient{
+  background-color: white;
+  height:150px;
+  width:300px;
+}
+
+.header {
+  position: fixed;
+  background-color: #000;
+}
+
+.main {
+  padding-top: 10em;
+}
+
+h1, h2{
+  /*position: fixed;*/
+  top:0px;
+  left:0px;
+  padding:10px;
+  margin:0px;
+  with:100%
+  background-color: white;
+  text-align: center;
+}
+
+
+img.align-left{
+  float: left;
+  margin-left:300px;
+}
+img.align-right{
+  float: right;
+  margin-right:300px;
+
+}
+
+p{
+  margin-top:200px;
+  text-align: left;
+}
+
+p1 {
+  margin-top:200px;
+  text-align: left;
+}
+
+p2 {
+  margin-top:200px;
+  text-align: center;
+}
+
+p3{
+  margin-top:200px;
+  text-align: right;
+}
+
+p5{
+  margin-top:400px;
+  background-color: white;
+  text-align: center;
+}
+
+footer{
+  text-align:center;
+}
+
+form{
+  margin-top:200px;
+}
+
+legend{
+  margin-top:200px;
+  text-align:center;
+}
+
+
+a:link {
+  color: red;
+  text-decoration: none;
+}
+a:visited{
+  color: white;
+}
+a:hover{
+  color: red;
+  text-decoration: underline;
+}
+a:active{
+  color: white;
+}
