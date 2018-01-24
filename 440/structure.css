@@ -15,12 +15,12 @@ body{
 }
 
 .header {
-  position: fixed;
+  position: center;
   background-color: #000;
 }
 
 .main {
-  padding-top: 10em;
+  padding-top: 5em;
 }
 
 h1, h2{
