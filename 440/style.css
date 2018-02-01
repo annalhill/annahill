@@ -1,4 +1,6 @@
 
+
+
 @font-face{
   font-family:"typewriter";
 }
@@ -37,19 +39,19 @@ p {
 
 p1{
   font-family:'typewriter';
-  color: red;
+  color: grey;
   font-size:100%
 }
 
 p2 {
   font-family:'typewriter';
-  color:blue;
+  color:grey;
   font-size:100%;
 }
 
-p2 {
+p3 {
   font-family:'typewriter';
-  color:green;
+  color:grey;
   font-size:100%;
 }
 
@@ -69,4 +71,79 @@ form{
   font-family: "typewriter";
   color: black;
   font-size:100%;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+}
+
+.info-text {
+  margin: auto;
+  padding: 0em 10em;
+
+}
+
+.divider {
+  margin: auto;
+  padding: 0em 10em;
+  min-height:10em;
+  background-color: black;
+}
+
+.bi1 {
+    opacity: 0.65;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.bi1 {
+    min-height: 100vh;
+    background-image: url("./images/red.jpg");
+}
+
+.bi2{
+  opacity: 0.65;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.bi2 {
+  min-height: 100vh;
+  background-image: url("./images/blue.jpg");
+}
+
+.hero-text1 {
+    text-align: center;
+    /* position: absolute; */
+    /* top: 50%; */
+    /* left: 50%; */
+    padding-top: 5em;
+    margin: auto;
+    /* transform: translate(-50%, -50%); */
+    color: white;
+}
+
+.hero-text2 {
+    text-align: center;
+    padding-left: 5em;
+    padding-right: 5em;
+    padding-top: 10em;
+    /* top: 50%; */
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    color: white;
+}
+
+.hero-text3 {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
 }
