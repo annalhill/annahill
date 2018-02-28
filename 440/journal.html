@@ -211,7 +211,84 @@ Agents: Particpiants and Instruments
 </br> Sketch due: Wednesday, February 28th
 </br> Project due: Wednesday, March 14th
 </br> Documentation due: Monday, March 19th
+</br> In this project, I will be building upon my sketch of taking in amplitude ratings from a microphone (stereo) and outputting it in the form of words. Depending on what
+level of amplitude comes into the system, the sketch will "upload" a word and as you strat using different voices and sounds, the sketch will create a flw of words. SOmetimes
+your poetry will make sense, and other times the words will come out in very random and unreadable manners.The main concept of this is that you'll be creating your own structure and as you figure out,
+as the preformer, what sounds make certain words, you can structure your own protry or sentences.
+</br> Agents/ Technology: Procesing Sketch, Microphone (could be from the computer or external- depends on resources), and preformers (myself or classmates).
+<fieldset>
+  <p3> This is a copy of the code that I am building off of </p3>
+  <p3>import ddf.minim.*;
 
+AudioPlayer player;
+Minim minim;
+
+void setup(){
+  size(1400, 1200, P2D);
+
+  minim = new Minim(this);
+  player = minim.loadFile("./p1_practice_1.wav", 2048);
+  player.play();
+  player.loop();
+}
+
+void draw(){
+  background(0);
+  stroke(255);
+  line(0,200,width,200);
+  int count = 0;
+  int lowTot = 0;
+  int medTot = 0;
+  int hiiTot = 0;
+  for (int i = 0; i < player.left.size()/3.0; i+=5){
+    lowTot+= (abs(player.left.get(i)) * 10 );
+    count++;
+  }
+  fill( map( lowTot, 0, count * 50, 0, 255 ), 0, 0);
+  noStroke();
+  text("A",0,0,40,40);
+  stroke(255);
+  strokeWeight(2);
+
+  for (int i = 0; i < player.left.size()/3.0; i+=5){
+    medTot+= (abs(player.left.get(i)) * 5 );
+    count++;
+  }
+  fill( map( medTot, 0, count * 50, 0, 255 ), 0, 0);
+  noStroke();
+  text("B", 0,0,60,60);
+  stroke(245);
+  strokeWeight(2);
+
+  for (int i = 0; i < player.left.size()/3.0; i+=5){
+    hiiTot+= (abs(player.left.get(i)) * 30 );
+    count++;
+  }
+  fill( map( hiiTot, 0, count * 50, 0, 255 ), 0, 0);
+  noStroke();
+  text("C", 0,0,50,50);
+  stroke(120);
+  strokeWeight(2);
+
+  for (int i = 0; i < player.left.size()-1; i+=5)
+  {
+    line(i, 50 + player.left.get(i)*50, i+1, 50 + player.left.get(i+1)*50);
+    line(i, 150 + player.right.get(i)*50, i+1, 150 + player.right.get(i+1)*50);
+    point( 2*i, 100 + player.left.get(i)*50 );
+
+  }
+}
+
+void stop(){
+  player.close();
+  minim.stop();
+  super.stop();
+}
+</p3>
+</fieldset>
+<p3> Examples of projects similar to this:
+</br>
+</p3>
 </p3>
 </fieldset>
 </div>
