@@ -213,75 +213,77 @@ Agents: Particpiants and Instruments
 level of amplitude comes into the system, the sketch will "upload" a word and as you strat using different voices and sounds, the sketch will create a flw of words. SOmetimes
 your poetry will make sense, and other times the words will come out in very random and unreadable manners.The main concept of this is that you'll be creating your own structure and as you figure out,
 as the preformer, what sounds make certain words, you can structure your own protry or sentences.
+</br> In a live preformance or interactive preformance capacity, this project could be used to tell a story, program the words to certain sounds. If an instrumental only preformer where
+to play this sketch along with their music, the input of sound would create the lyrics that go to the song.
 </br> Agents/ Technology: Procesing Sketch, Microphone (could be from the computer or external- depends on resources), and preformers (myself or classmates).
 <fieldset>
   <p3> This is a copy of the code that I am building off of </p3>
   <p3>import ddf.minim.*;
 
-AudioPlayer player;
-Minim minim;
+</br> AudioPlayer player;
+</br>Minim minim;
 
-void setup(){
-  size(1400, 1200, P2D);
+</br>void setup(){
+  </br>size(1400, 1200, P2D);
 
-  minim = new Minim(this);
-  player = minim.loadFile("./p1_practice_1.wav", 2048);
-  player.play();
-  player.loop();
-}
+  </br>minim = new Minim(this);
+  </br>player = minim.loadFile("./p1_practice_1.wav", 2048);
+  </br>player.play();
+  </br>player.loop();
+</br>}
 
-void draw(){
-  background(0);
-  stroke(255);
-  line(0,200,width,200);
-  int count = 0;
-  int lowTot = 0;
-  int medTot = 0;
-  int hiiTot = 0;
-  for (int i = 0; i < player.left.size()/3.0; i+=5){
-    lowTot+= (abs(player.left.get(i)) * 10 );
-    count++;
-  }
-  fill( map( lowTot, 0, count * 50, 0, 255 ), 0, 0);
-  noStroke();
-  text("A",0,0,40,40);
-  stroke(255);
-  strokeWeight(2);
+</br>void draw(){
+  </br>background(0);
+  </br>stroke(255);
+  </br>line(0,200,width,200);
+  </br>int count = 0;
+  </br>int lowTot = 0;
+  </br>int medTot = 0;
+  </br>int hiiTot = 0;
+  </br>for (int i = 0; i < player.left.size()/3.0; i+=5){
+    </br>lowTot+= (abs(player.left.get(i)) * 10 );
+    </br>count++;
+  </br>}
+  </br>fill( map( lowTot, 0, count * 50, 0, 255 ), 0, 0);
+  </br>noStroke();
+  </br>text("A",0,0,40,40);
+  </br>stroke(255);
+  </br>strokeWeight(2);
 
-  for (int i = 0; i < player.left.size()/3.0; i+=5){
-    medTot+= (abs(player.left.get(i)) * 5 );
-    count++;
-  }
-  fill( map( medTot, 0, count * 50, 0, 255 ), 0, 0);
-  noStroke();
-  text("B", 0,0,60,60);
-  stroke(245);
-  strokeWeight(2);
+  </br>for (int i = 0; i < player.left.size()/3.0; i+=5){
+    </br>medTot+= (abs(player.left.get(i)) * 5 );
+    </br>count++;
+  </br>}
+  </br>fill( map( medTot, 0, count * 50, 0, 255 ), 0, 0);
+  </br>noStroke();
+  </br>text("B", 0,0,60,60);
+  </br>stroke(245);
+  </br>strokeWeight(2);
 
-  for (int i = 0; i < player.left.size()/3.0; i+=5){
-    hiiTot+= (abs(player.left.get(i)) * 30 );
-    count++;
-  }
-  fill( map( hiiTot, 0, count * 50, 0, 255 ), 0, 0);
-  noStroke();
-  text("C", 0,0,50,50);
-  stroke(120);
-  strokeWeight(2);
+  </br>for (int i = 0; i < player.left.size()/3.0; i+=5){
+    </br>hiiTot+= (abs(player.left.get(i)) * 30 );
+    </br>count++;
+  </br>}
+  </br>fill( map( hiiTot, 0, count * 50, 0, 255 ), 0, 0);
+  </br>noStroke();
+  </br>text("C", 0,0,50,50);
+  </br>stroke(120);
+  </br>strokeWeight(2);
 
-  for (int i = 0; i < player.left.size()-1; i+=5)
-  {
-    line(i, 50 + player.left.get(i)*50, i+1, 50 + player.left.get(i+1)*50);
-    line(i, 150 + player.right.get(i)*50, i+1, 150 + player.right.get(i+1)*50);
-    point( 2*i, 100 + player.left.get(i)*50 );
+  </br>for (int i = 0; i < player.left.size()-1; i+=5)
+  </br>{
+    </br>line(i, 50 + player.left.get(i)*50, i+1, 50 + player.left.get(i+1)*50);
+    </br>line(i, 150 + player.right.get(i)*50, i+1, 150 + player.right.get(i+1)*50);
+    </br>point( 2*i, 100 + player.left.get(i)*50 );
 
-  }
-}
+  </br>}
+</br>}
 
-void stop(){
-  player.close();
-  minim.stop();
-  super.stop();
-}
+</br>void stop(){
+  </br>player.close();
+  </br>minim.stop();
+  </br>super.stop();
+</br>}
 </p3>
 </fieldset>
 <p3> Examples of projects similar to this:
